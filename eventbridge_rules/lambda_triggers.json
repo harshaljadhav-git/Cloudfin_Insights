@@ -1,0 +1,11 @@
+{
+  "Name": "TriggerLambdaEveryHour",
+  "ScheduleExpression": "rate(1 hour)",
+  "State": "ENABLED",
+  "Targets": [
+    {
+      "Id": "LambdaTarget",
+      "Arn": "arn:aws:lambda:ap-south-1:123456789012:function:rds_to_s3_lambda"
+    }
+  ]
+}

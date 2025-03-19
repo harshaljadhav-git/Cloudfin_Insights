@@ -1,0 +1,21 @@
+{
+  "DashboardName": "Financial Transactions Analysis",
+  "DatasetArn": "arn:aws:quicksight:ap-south-1:123456789012:dataset/transactions_dataset",
+  "Permissions": [
+    {
+      "Principal": "arn:aws:iam::123456789012:user/your-username",
+      "Actions": ["quicksight:DescribeDashboard"]
+    }
+  ],
+  "SourceEntity": {
+    "SourceTemplate": {
+      "Arn": "arn:aws:quicksight:ap-south-1:123456789012:template/template-id",
+      "DataSetReferences": [
+        {
+          "DataSetArn": "arn:aws:quicksight:ap-south-1:123456789012:dataset/transactions_dataset",
+          "DataSetPlaceholder": "DatasetPlaceholder"
+        }
+      ]
+    }
+  }
+}
